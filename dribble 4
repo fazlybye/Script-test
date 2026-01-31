@@ -1,0 +1,11 @@
+while wait() do
+local args = {
+	workspace:WaitForChild("ServerSoccerBall"),
+	vector.create(-0.9991837739944458, -4.533740938228448e-09, 0.0403948649764061),
+	"Dribble",
+	vector.create(-1041.76171875, 96.88423156738281, -484.9508056640625),
+	CFrame.new(-1037.468994140625, 99.05091094970703, -485.3844909667969, -0.0403948649764061, -4.42548042656199e-09, 0.9991837739944458, 2.5884472343307152e-09, 1, 4.533740938228448e-09, -0.9991837739944458, 2.769474427566365e-09, -0.0403948649764061),
+	"Forward"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("KickBallRemote"):FireServer(unpack(args))
+end
