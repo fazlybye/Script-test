@@ -1,0 +1,7 @@
+While wait() do
+local args = {
+	100,
+	True
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("StaminaReport"):FireServer(unpack(args))
+end
